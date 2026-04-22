@@ -30,7 +30,7 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -2;
-  background-image: url("./assets/images/field-lines-white.svg");
+  background-image: url("./field-lines-white.svg");
   background-size: 640px 640px;
   background-repeat: repeat;
   opacity: 0.82;
