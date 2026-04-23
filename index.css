@@ -22,7 +22,7 @@ body {
   place-items: center;
   padding: clamp(16px, 3vw, 36px);
   position: relative;
-  overflow: hidden;
+  overflow: auto;
 }
 
 body::before {
