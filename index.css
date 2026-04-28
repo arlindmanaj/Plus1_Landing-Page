@@ -260,9 +260,28 @@ body::after {
   box-shadow: 0 10px 22px rgba(31, 91, 232, 0.32);
 }
 
+.play-popup-backdrop {
+  position: fixed;
+  inset: 0;
+  padding: clamp(16px, 4vw, 34px);
+  background: rgba(15, 23, 42, 0.42);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 70;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.22s ease;
+}
+
+.play-popup-backdrop.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .play-popup {
-  margin: 14px auto 0;
-  max-width: 640px;
+  width: min(640px, 100%);
   border: 1px solid #d0dcf8;
   border-radius: 14px;
   background: linear-gradient(135deg, rgba(31, 91, 232, 0.16) 0%, rgba(255, 255, 255, 0.95) 38%, rgba(248, 252, 255, 0.97) 100%);
@@ -275,7 +294,7 @@ body::after {
   position: relative;
   overflow: hidden;
   opacity: 0;
-  transform: translateY(8px);
+  transform: translateY(10px) scale(0.98);
   pointer-events: none;
   transition: opacity 0.22s ease, transform 0.22s ease;
 }
@@ -326,7 +345,7 @@ body::after {
 
 .play-popup.is-visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0) scale(1);
   pointer-events: auto;
 }
 

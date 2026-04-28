@@ -41,9 +41,11 @@
         <a class="store-btn play-store" href="#" aria-label="Shkarko në Play Store">Shkarko në Play Store</a>
       </section>
 
-      <div class="play-popup" id="androidPopup" aria-live="polite" aria-hidden="true">
-        <p>Akoma nuk është lansuar për android, na ndiqni në plus1.ks në instagram për përditësime!</p>
-        <button type="button" class="play-popup-close" aria-label="Mbyll njoftimin">Mbyll</button>
+      <div class="play-popup-backdrop" id="androidPopupBackdrop" aria-hidden="true">
+        <div class="play-popup" id="androidPopup" role="dialog" aria-modal="true" aria-live="polite" aria-hidden="true" aria-labelledby="androidPopupMessage">
+          <p id="androidPopupMessage">Akoma nuk është lansuar për android, na ndiqni në plus1.ks në instagram për përditësime!</p>
+          <button type="button" class="play-popup-close" aria-label="Mbyll njoftimin">Mbyll</button>
+        </div>
       </div>
 
       <p class="micro-copy">Krijo profilin, fto skuadrën dhe hyr në lojë më shpejt.</p>
@@ -53,21 +55,26 @@
   <script>
     (() => {
       const playStoreButton = document.querySelector('.play-store');
+      const backdrop = document.getElementById('androidPopupBackdrop');
       const popup = document.getElementById('androidPopup');
       const popupClose = popup ? popup.querySelector('.play-popup-close') : null;
 
-      if (!playStoreButton || !popup || !popupClose) {
+      if (!playStoreButton || !backdrop || !popup || !popupClose) {
         return;
       }
 
       let hideTimer;
 
       const hidePopup = () => {
+        backdrop.classList.remove('is-visible');
+        backdrop.setAttribute('aria-hidden', 'true');
         popup.classList.remove('is-visible');
         popup.setAttribute('aria-hidden', 'true');
       };
 
       const showPopup = () => {
+        backdrop.classList.add('is-visible');
+        backdrop.setAttribute('aria-hidden', 'false');
         popup.classList.add('is-visible');
         popup.setAttribute('aria-hidden', 'false');
 
@@ -81,6 +88,12 @@
       });
 
       popupClose.addEventListener('click', hidePopup);
+
+      backdrop.addEventListener('click', (event) => {
+        if (event.target === backdrop) {
+          hidePopup();
+        }
+      });
 
       document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape') {
