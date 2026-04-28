@@ -41,8 +41,53 @@
         <a class="store-btn play-store" href="#" aria-label="Shkarko në Play Store">Shkarko në Play Store</a>
       </section>
 
+      <div class="play-popup" id="androidPopup" aria-live="polite" aria-hidden="true">
+        <p>Akoma nuk është lansuar për android, na ndiqni në plus1.ks në instagram për përditësime!</p>
+        <button type="button" class="play-popup-close" aria-label="Mbyll njoftimin">Mbyll</button>
+      </div>
+
       <p class="micro-copy">Krijo profilin, fto skuadrën dhe hyr në lojë më shpejt.</p>
     </article>
   </main>
+
+  <script>
+    (() => {
+      const playStoreButton = document.querySelector('.play-store');
+      const popup = document.getElementById('androidPopup');
+      const popupClose = popup ? popup.querySelector('.play-popup-close') : null;
+
+      if (!playStoreButton || !popup || !popupClose) {
+        return;
+      }
+
+      let hideTimer;
+
+      const hidePopup = () => {
+        popup.classList.remove('is-visible');
+        popup.setAttribute('aria-hidden', 'true');
+      };
+
+      const showPopup = () => {
+        popup.classList.add('is-visible');
+        popup.setAttribute('aria-hidden', 'false');
+
+        clearTimeout(hideTimer);
+        hideTimer = setTimeout(hidePopup, 6500);
+      };
+
+      playStoreButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        showPopup();
+      });
+
+      popupClose.addEventListener('click', hidePopup);
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+          hidePopup();
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
