@@ -2,98 +2,80 @@
 <html lang="sq">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Plus1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f7f9fc" />
+  <title>Plus1 — Gjej lojtarë. Hyr në lojë.</title>
+  <meta name="description" content="Futboll, basketboll, volejboll, tenis e padel. Gjej lojtarë, organizo ndeshje dhe bëhu pjesë e komunitetit Plus1: mbi 2,500 përdorues, 140 qendra sportive, 2 shtete." />
+  <link rel="canonical" href="https://www.plus1.to/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="sq_AL" />
+  <meta property="og:title" content="5 sporte. Një komunitet. Plus1." />
+  <meta property="og:description" content="Gjej lojtarë, bashkohu në ndeshje dhe organizo skuadrën tënde. Shkarko Plus1 për iPhone ose Android." />
+  <meta property="og:url" content="https://www.plus1.to/" />
+  <meta property="og:image" content="https://www.plus1.to/sports-atlas.png" />
+  <link rel="icon" href="./plus1-mark.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Sora:wght@600;700;800&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./index.css" />
 </head>
 <body>
-  <main class="landing-shell">
-    <article class="landing-card">
-      <header class="brand" aria-label="Brand Plus1">
-        <img src="./sig-colors-png.png" alt="Plus1 logo" class="brand-logo" />
-      </header>
-
-      <h2 class="hero-title">Gjej Lojtarët. <span>Rezervo menjëherë.</span></h2>
-      <p class="tagline">30+ fusha të disponueshme.</p>
-
-      <section class="hero-copy" aria-label="Përfitimet kryesore të aplikacionit">
-        <article class="feature">
-          <h3>Rezervo në kohë reale</h3>
-          <p>Shiko fushat me orare të lira dhe mbylle vendin në sekonda.</p>
-        </article>
-
-        <article class="feature">
-          <h3>Luan me nivelin tënd</h3>
-          <p>Ndërto profilin tënd dhe gjej ndeshje që të përshtaten.</p>
-        </article>
-
-        <article class="feature diss-line">
-          <h3>Heke WhatsApp-in, fto skuadrën direkt në aplikacion</h3>
-          <p>Hiq rrëmujën e grupeve dhe organizoje skuadrën direkt në aplikacion.</p>
-        </article>
-      </section>
-
-      <section class="store-buttons" aria-label="Shkarko aplikacionin">
-        <a class="store-btn app-store" href="https://apps.apple.com/xk/app/plus1-rrjeti-sportiv/id6762627521" aria-label="Shkarko në App Store">Shkarko në App Store</a>
-        <a class="store-btn play-store" href="https://play.google.com/store/apps/details?id=com.arlindm.plus1&pcampaignid=web_share" aria-label="Shkarko në Play Store">Shkarko në Play Store</a>
-      </section>
-
-      <p class="micro-copy">Krijo profilin, fto skuadrën dhe hyr në lojë më shpejt.</p>
-    </article>
+  <a class="skip-link" href="#main">Kalo te përmbajtja</a>
+  <svg class="court-lines" viewBox="0 0 1440 1100" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="1.5"><g transform="translate(-200,-220) rotate(24 350 350)"><rect x="0" y="0" width="600" height="940"/><path d="M0 470h600M180 0v180h240V0M180 940V760h240v180"/><circle cx="300" cy="470" r="115"/><path d="M90 0v250h420V0M90 940V690h420v250"/></g><g transform="translate(1140,180) rotate(24)"><rect width="480" height="940"/><path d="M45 0v940M435 0v940M45 235h390M45 705h390M240 235v470M0 470h480"/></g></g></svg>
+  <header class="site-header wrap">
+    <a class="brand" href="./" aria-label="Plus1, ballina"><img src="./plus1-mark.svg" width="45" height="37" alt="" /><span>PLUS1</span></a>
+    <a class="header-download" href="#shkarko">Hyr në lojë <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="small-cross" aria-hidden="true">+</span> SPORTI YT. NJERËZIT E TU.</p>
+        <h1 id="hero-title">Më pak plane.<br /><span>Më shumë<br class="desktop-break" /> lojë.</span></h1>
+        <p class="hero-description">Të mungon një lojtar? Apo një ekip i tërë? Gjej njerëz për sportin tënd, bashkohu në një ndeshje ose krijo tënden.</p>
+        <div id="hero-downloads"><div class="store-links"><a class="store-link" href="https://apps.apple.com/xk/app/plus1-rrjeti-sportiv/id6762627521" aria-label="Shkarko Plus1 në App Store"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.05 12.54c.03 3.07 2.69 4.09 2.72 4.1-.02.07-.42 1.46-1.4 2.9-.85 1.24-1.74 2.48-3.13 2.5-1.36.03-1.8-.81-3.36-.81-1.56 0-2.05.79-3.34.84-1.34.05-2.36-1.34-3.22-2.58-1.75-2.54-3.09-7.18-1.3-10.31a5 5 0 0 1 4.25-2.57c1.33-.02 2.58.9 3.39.9.81 0 2.33-1.11 3.92-.95.67.03 2.55.27 3.76 2.04-.1.06-2.24 1.3-2.22 3.94ZM14.49 4.86c.71-.86 1.19-2.06 1.06-3.26-1.03.04-2.28.69-3.02 1.55-.67.77-1.26 2-1.1 3.18 1.15.09 2.34-.59 3.06-1.47Z"/></svg><span><small>Shkarko në</small><strong>App Store</strong></span></a><a class="store-link" href="https://play.google.com/store/apps/details?id=com.arlindm.plus1&amp;pcampaignid=web_share" aria-label="Shkarko Plus1 në Google Play"><svg viewBox="0 0 24 26" aria-hidden="true"><path fill="#32BBFF" d="M2 1 14 13 2 25Z"/><path fill="#00E477" d="m2 1 15 8-3 4Z"/><path fill="#FFBC00" d="m17 9 5 3c1 .5 1 1.5 0 2l-5 3-3-4Z"/><path fill="#FF4D64" d="m2 25 15-8-3-4Z"/></svg><span><small>Shkarko në</small><strong>Google Play</strong></span></a></div></div>
+        <p class="download-note">Për iPhone dhe Android. Takoheni në fushë.</p>
+      </div>
+      <div class="sports-showcase">
+        <div class="showcase-heading"><span>5 SPORTE. NJË KOMUNITET.</span><span class="new-label">TANI NË PLUS1</span></div>
+        <ul class="sports" aria-label="Sportet në Plus1"><li class="sport sport-0"><span class="sport-photo" aria-hidden="true"></span><span class="sport-number">01</span><span class="sport-name">Futboll</span></li><li class="sport sport-1"><span class="sport-photo" aria-hidden="true"></span><span class="sport-number">02</span><span class="sport-name">Basketboll</span></li><li class="sport sport-2"><span class="sport-photo" aria-hidden="true"></span><span class="sport-number">03</span><span class="sport-name">Volejboll</span></li><li class="sport sport-3"><span class="sport-photo" aria-hidden="true"></span><span class="sport-number">04</span><span class="sport-name">Tenis</span></li><li class="sport sport-4"><span class="sport-photo" aria-hidden="true"></span><span class="sport-number">05</span><span class="sport-name">Padel</span></li></ul>
+        <div class="showcase-footer"><span>Ti zgjedh sportin.<br /><strong>Ne ju bëjmë bashkë.</strong></span><span class="hand-arrow" aria-hidden="true">↗</span></div>
+      </div>
+    </section>
+    <section class="stats wrap" aria-label="Komuniteti Plus1">
+      <div><strong>2,500<span>+</span></strong><span>përdorues</span></div>
+      <div><strong>140</strong><span>qendra sportive</span></div>
+      <div><strong>2</strong><span>shtete</span></div>
+      <p>Gjithnjë e më shumë njerëz.<br /><b>Gjithnjë e më shumë lojë.</b></p>
+    </section>
+    <section class="how wrap" aria-labelledby="how-title">
+      <div class="section-heading"><p class="eyebrow">NGA “KUSH PO VJEN?” TE “U BËMË!”</p><h2 id="how-title">Loja fillon<br />kur bëheni bashkë.</h2></div>
+      <div class="steps">
+        <article><span class="step-number">01 /</span><h3>Gjej lojën tënde.</h3><p>Zgjidh sportin dhe qytetin. Shiko ndeshjet, gjej një vend të lirë dhe bashkohu.</p><div class="mini-tags" aria-hidden="true"><span>Sporti yt</span><span>Qyteti yt</span><span>Loja jote ↗</span></div></article>
+        <article><span class="step-number">02 /</span><h3>Organizo një ndeshje.</h3><p>Zgjidh fushën, cakto orarin dhe trego sa lojtarë të duhen. Rezervo në qendrat partnere përmes aplikacionit.</p><div class="step-line" aria-hidden="true"><span>Fusha</span><i></i><span>Orari</span><i></i><span>Lojtarët</span></div></article>
+        <article><span class="step-number">03 /</span><h3>Mbaje ekipin afër.</h3><p>Krijo skuadrën, fto miqtë dhe organizohuni në bisedë. Ndeshja e radhës nis me njerëzit që njeh.</p><div class="team-visual" aria-hidden="true"><span>+1</span><span>+1</span><span>+1</span><b>Skuadra jote.</b></div></article>
+      </div>
+    </section>
+    <aside class="trust wrap" aria-label="Një komunitet me përgjegjësi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6Z"/><path d="m8 12 3 3 5-6"/></svg><div><h2>Pak më shumë besim, në çdo ndeshje.</h2><p>Vlerësimet pas lojës, besueshmëria nga pjesëmarrja dhe mundësia për të raportuar probleme ndihmojnë ta mbajmë komunitetin më të përgjegjshëm.</p></div></aside>
+    <section class="final-cta wrap" id="shkarko" aria-labelledby="download-title"><div><p class="eyebrow">MOS E LË LOJËN PËR NJË DITË TJETËR.</p><h2 id="download-title">Vendi yt në lojë<br />fillon me <span>+1.</span></h2><p>Shkarko Plus1. Gjej sportin dhe njerëzit e tu.</p></div><div id="final-downloads"><div class="store-links"><a class="store-link" href="https://apps.apple.com/xk/app/plus1-rrjeti-sportiv/id6762627521" aria-label="Shkarko Plus1 në App Store"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.05 12.54c.03 3.07 2.69 4.09 2.72 4.1-.02.07-.42 1.46-1.4 2.9-.85 1.24-1.74 2.48-3.13 2.5-1.36.03-1.8-.81-3.36-.81-1.56 0-2.05.79-3.34.84-1.34.05-2.36-1.34-3.22-2.58-1.75-2.54-3.09-7.18-1.3-10.31a5 5 0 0 1 4.25-2.57c1.33-.02 2.58.9 3.39.9.81 0 2.33-1.11 3.92-.95.67.03 2.55.27 3.76 2.04-.1.06-2.24 1.3-2.22 3.94ZM14.49 4.86c.71-.86 1.19-2.06 1.06-3.26-1.03.04-2.28.69-3.02 1.55-.67.77-1.26 2-1.1 3.18 1.15.09 2.34-.59 3.06-1.47Z"/></svg><span><small>Shkarko në</small><strong>App Store</strong></span></a><a class="store-link" href="https://play.google.com/store/apps/details?id=com.arlindm.plus1&amp;pcampaignid=web_share" aria-label="Shkarko Plus1 në Google Play"><svg viewBox="0 0 24 26" aria-hidden="true"><path fill="#32BBFF" d="M2 1 14 13 2 25Z"/><path fill="#00E477" d="m2 1 15 8-3 4Z"/><path fill="#FFBC00" d="m17 9 5 3c1 .5 1 1.5 0 2l-5 3-3-4Z"/><path fill="#FF4D64" d="m2 25 15-8-3-4Z"/></svg><span><small>Shkarko në</small><strong>Google Play</strong></span></a></div><p class="download-note">Shihemi në fushë.</p></div></section>
   </main>
-
+  <footer class="site-footer wrap"><a class="brand" href="./" aria-label="Plus1, ballina"><img src="./plus1-mark.svg" width="32" height="26" alt="" /><span>PLUS1</span></a><p>Sporti na bën bashkë.</p><span>© Plus1</span></footer>
+  <div class="mobile-downloads" id="mobile-downloads" hidden aria-label="Shkarko Plus1"><div class="store-links"><a class="store-link" href="https://apps.apple.com/xk/app/plus1-rrjeti-sportiv/id6762627521" aria-label="Shkarko Plus1 në App Store"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.05 12.54c.03 3.07 2.69 4.09 2.72 4.1-.02.07-.42 1.46-1.4 2.9-.85 1.24-1.74 2.48-3.13 2.5-1.36.03-1.8-.81-3.36-.81-1.56 0-2.05.79-3.34.84-1.34.05-2.36-1.34-3.22-2.58-1.75-2.54-3.09-7.18-1.3-10.31a5 5 0 0 1 4.25-2.57c1.33-.02 2.58.9 3.39.9.81 0 2.33-1.11 3.92-.95.67.03 2.55.27 3.76 2.04-.1.06-2.24 1.3-2.22 3.94ZM14.49 4.86c.71-.86 1.19-2.06 1.06-3.26-1.03.04-2.28.69-3.02 1.55-.67.77-1.26 2-1.1 3.18 1.15.09 2.34-.59 3.06-1.47Z"/></svg><span><small>Shkarko në</small><strong>App Store</strong></span></a><a class="store-link" href="https://play.google.com/store/apps/details?id=com.arlindm.plus1&amp;pcampaignid=web_share" aria-label="Shkarko Plus1 në Google Play"><svg viewBox="0 0 24 26" aria-hidden="true"><path fill="#32BBFF" d="M2 1 14 13 2 25Z"/><path fill="#00E477" d="m2 1 15 8-3 4Z"/><path fill="#FFBC00" d="m17 9 5 3c1 .5 1 1.5 0 2l-5 3-3-4Z"/><path fill="#FF4D64" d="m2 25 15-8-3-4Z"/></svg><span><small>Shkarko në</small><strong>Google Play</strong></span></a></div></div>
   <script>
-    (() => {
-      const playStoreButton = document.querySelector('.play-store');
-      const backdrop = document.getElementById('androidPopupBackdrop');
-      const popup = document.getElementById('androidPopup');
-      const popupClose = popup ? popup.querySelector('.play-popup-close') : null;
-
-      if (!playStoreButton || !backdrop || !popup || !popupClose) {
-        return;
-      }
-
-      let hideTimer;
-
-      const hidePopup = () => {
-        backdrop.classList.remove('is-visible');
-        backdrop.setAttribute('aria-hidden', 'true');
-        popup.classList.remove('is-visible');
-        popup.setAttribute('aria-hidden', 'true');
-      };
-
-      const showPopup = () => {
-        backdrop.classList.add('is-visible');
-        backdrop.setAttribute('aria-hidden', 'false');
-        popup.classList.add('is-visible');
-        popup.setAttribute('aria-hidden', 'false');
-
-        clearTimeout(hideTimer);
-        hideTimer = setTimeout(hidePopup, 6500);
-      };
-
-      playStoreButton.addEventListener('click', (event) => {
-        event.preventDefault();
-        showPopup();
-      });
-
-      popupClose.addEventListener('click', hidePopup);
-
-      backdrop.addEventListener('click', (event) => {
-        if (event.target === backdrop) {
-          hidePopup();
+    // Keep downloads within reach after the first buttons leave the screen.
+    // All store links work without JavaScript; there are no redirects or popups.
+    if ('IntersectionObserver' in window) {
+      const dock = document.getElementById('mobile-downloads');
+      let heroVisible = true, finalVisible = false;
+      const observer = new IntersectionObserver(entries => {
+        for (const entry of entries) {
+          if (entry.target.id === 'hero-downloads') heroVisible = entry.isIntersecting;
+          else finalVisible = entry.isIntersecting;
         }
+        dock.hidden = heroVisible || finalVisible;
       });
-
-      document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape') {
-          hidePopup();
-        }
-      });
-    })();
+      observer.observe(document.getElementById('hero-downloads'));
+      observer.observe(document.getElementById('final-downloads'));
+    }
   </script>
 </body>
 </html>
